@@ -1,5 +1,5 @@
 class Number{
-  int total = 0;
+  double total = 0;
 
 /***************************
 * ADDITION:
@@ -20,12 +20,30 @@ void subtract(calcValues)
 }
 
 /***************************
+* Multiply:
+* Multiply values
+******************************/
+void multiply(calcValues)
+{
+  total = calcValues[0] * calcValues[1];
+}
+
+/***************************
+* Divide:
+* Divide values
+******************************/
+void divide(calcValues)
+{
+  total = calcValues[0] / calcValues[1];
+}
+
+/***************************
 * COMPUTE:
 * THis method figures out what math it needs to do.
 ******************************/
-int compute(symbol,calcValues)
+double compute(symbol,calcValues)
 {
-  //print("Current Symbol: $symbol");
+  print("Current Number Symbol: $symbol");
 
   switch(symbol)
   {
@@ -38,6 +56,16 @@ int compute(symbol,calcValues)
     case "-":
     {
       subtract(calcValues);
+      break;
+    }
+    case "*":
+    {
+      multiply(calcValues);
+      break;
+    }
+    case "/":
+    {
+      divide(calcValues);
       break;
     }
 
