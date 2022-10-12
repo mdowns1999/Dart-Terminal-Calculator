@@ -6,7 +6,7 @@ class Calculator
   //Set up List
   var inputValues = [];
   var calcValues = [];
-  double doubleValue = 0;
+  var doubleValue = 0.0;
   String strValue = "";
   Number number = Number();
   String? prevInput = "";
@@ -61,7 +61,6 @@ void calculate()
 
           else if(prevSymbol == "=" &&  isOperator(prevInput) == false && isOperator(input) == true)
             {
-
               calcValues.remove(calcValues[0]);
               inputValues.add("0");
             }
@@ -86,8 +85,10 @@ void calculate()
         
       }
     //Display Screen
-    if(doubleValue == 0)
+    if(doubleValue == 0.0)
       doubleValue = calcValues[0];
+
+    print("DOUBLE VALUE: $doubleValue");
     display(doubleValue);
     
       //display(intValue);
@@ -118,7 +119,7 @@ void formatInput(inputValues)
 ******************************/
 double convertToDouble(value)
 {
-  double numValue = double.parse(value);
+  var numValue = double.parse(value);
 
   return numValue ;
 }
@@ -199,17 +200,26 @@ void resetDisplay()
   ******************************/
 void clear()
 {
-  //Reset Int Value List
   calcValues.removeRange(0, calcValues.length);
-  //print(calcValues);
+  print("CLEAR CALC");
 
-
-  //Reset String Value List
   inputValues.removeRange(0, inputValues.length);
+  inputValues.add("0");
+  print("CLEAR INPUT");
+
+  //doubleValue = 0.0;
+  // calcValues = [];
+  // print(calcValues.length);
+  // print('CALC VALUES CLEARED');
+  // //print(calcValues);
+
+  // //Reset String Value List
+  // c
+  // print(inputValues.length);
+  // print('STR VALUES CLEARED');
 
   //Reset the Values
-  inputValues.add("0");
-  doubleValue = 0;
+  // doubleValue = 0.0;
   prevSymbol = "";
   currentSymbol = "";
   prevInput = "";
