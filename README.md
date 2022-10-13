@@ -1,7 +1,7 @@
 # Overview
 The software I wrote was in the Dart Language. In the code, I use two classes, have multiple control structures (IF and switch), and a loop.  It was interesting learning Dart and seeing how it was similar to langauges like Python or Javascript.  I found some things a little different with the langauge (like reciving input from the user from ther terminal), but it should not cause a problem later on since using the terminal is temporary.  
 
-I decided to make a calculator program out of it.  The reason why I wanted to do this in the r terminal first, was because I wanted to learn the language and then later on enhance it by using Flutter to go along with it.  The basic functions that it can do is addition, subtraction, multiplication, and division.  
+I decided to make a calculator program out of it.  The reason why I wanted to do this in the r terminal first, was because I wanted to learn the language and then later on enhance it by using Flutter to go along with it.  The basic functions that it can do is addition, subtraction, multiplication, and division.  I also tried to mimic how a calcuator actually works when I run it in the terminal.
 
 [Dart Terminal Calculator Demo Video](http://youtube.link.goes.here)
 
