@@ -13,7 +13,6 @@ The programming language I used for this project was Dart.  The reason for this 
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
 * [Dart Syntax](https://www.darttutorial.org/dart-tutorial/dart-syntax/)
 * [Geeks for Geeks Dart Syntax](https://www.geeksforgeeks.org/dart-basic-syntax/)
 
